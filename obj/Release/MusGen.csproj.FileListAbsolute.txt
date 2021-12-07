@@ -1,0 +1,10 @@
+C:\Users\lipko\source\repos\MusGen\MusGen\bin\Release\MusGen.exe.config
+C:\Users\lipko\source\repos\MusGen\MusGen\bin\Release\MusGen.exe
+C:\Users\lipko\source\repos\MusGen\MusGen\bin\Release\MusGen.pdb
+C:\Users\lipko\source\repos\MusGen\MusGen\obj\Release\MusGen.csproj.AssemblyReference.cache
+C:\Users\lipko\source\repos\MusGen\MusGen\obj\Release\MusGen.MusGen.resources
+C:\Users\lipko\source\repos\MusGen\MusGen\obj\Release\MusGen.Properties.Resources.resources
+C:\Users\lipko\source\repos\MusGen\MusGen\obj\Release\MusGen.csproj.GenerateResource.cache
+C:\Users\lipko\source\repos\MusGen\MusGen\obj\Release\MusGen.csproj.CoreCompileInputs.cache
+C:\Users\lipko\source\repos\MusGen\MusGen\obj\Release\MusGen.exe
+C:\Users\lipko\source\repos\MusGen\MusGen\obj\Release\MusGen.pdb
