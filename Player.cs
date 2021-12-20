@@ -10,12 +10,15 @@ namespace MusGen
         private List<string[]> playlist;
         public Player(List<string[]> playlist)
         {
-            this.playlist = playlist;
+            this.Playlist = playlist;
         }
+
+        public List<string[]> Playlist { get => playlist; set => playlist = value; }
+
         public void play()
         {
             SoundPlayer soundPlayer = new SoundPlayer();
-            foreach (string[] symbol in playlist)
+            foreach (string[] symbol in Playlist)
             {
                 if (symbol[0] == "Pause")
                 {

@@ -16,7 +16,6 @@ namespace MusGen
                 string note = temp == 7 ? "Pause" : tonality[temp];
                 string octave = rnd.Next(0, 2) == 0 ? "Small" : "One-line";
                 string duration = rnd.Next(1, 5).ToString();
-
                 playlist.Add(new string[] { note, octave, duration });
             }
         }

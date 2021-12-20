@@ -5,7 +5,6 @@ namespace MusGen
     class Tonality
     {
         private string[] notes = new[] { "Do", "Re", "Mi", "Fa", "Sol", "La", "Si" }; // default CMajor()
-        private string tonal = null;
         private void CsharpMajor() // 7 sharp
         {
             notes = new[] { "Do", "DoSharp", "ReSharp", "Fa", "FaSharp", "SolSharp", "LaSharp" };
@@ -64,66 +63,53 @@ namespace MusGen
         }
         public Tonality(int index)
         {
+            if (index == 0)
+                index = new Random().Next(0, 15);
             switch (index)
             {
                 case 0:
                     CsharpMajor();
-                    tonal = "C# Major";
                     break;
                 case 1:
                     FsharpMajor();
-                    tonal = "F# Major";
                     break;
                 case 2:
                     BMajor();
-                    tonal = "B Major";
                     break;
                 case 3:
                     EMajor();
-                    tonal = "E Major";
                     break;
                 case 4:
                     AMajor();
-                    tonal = "A Major";
                     break;
                 case 5:
                     DMajor();
-                    tonal = "D Major";
                     break;
                 case 6:
                     GMajor();
-                    tonal = "G Major";
                     break;
                 case 7:
-                    tonal = "C Major";
                     break;
                 case 8:
                     FMajor();
-                    tonal = "F Major";
                     break;
                 case 9:
                     BflatMajor();
-                    tonal = "Bb Major";
                     break;
                 case 10:
                     EflatMajor();
-                    tonal = "Eb Major";
                     break;
                 case 11:
                     AflatMajor();
-                    tonal = "Ab Major";
                     break;
                 case 12:
                     DflatMajor();
-                    tonal = "Db Major";
                     break;
                 case 13:
                     GflatMajor();
-                    tonal = "Gb Major";
                     break;
                 case 14:
                     CflatMajor();
-                    tonal = "Cb Major";
                     break;
                 default:
                     break;
@@ -132,10 +118,6 @@ namespace MusGen
         public string[] getTonality()
         {
             return notes;
-        }
-        public string getTonal()
-        {
-            return tonal;
         }
     }
 }
